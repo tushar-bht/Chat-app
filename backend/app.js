@@ -21,7 +21,7 @@ try {
     }
   );
 
-  console.log(process.send.PASSWORD);
+  console.log(process.env.PASSWORD);
   console.log(process.env.DB_USER);
   const server = new ApolloServer({
     typeDefs,
