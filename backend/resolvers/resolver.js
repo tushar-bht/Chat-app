@@ -82,10 +82,10 @@ const resolver = {
         await newRoom.save();
 
         setTimeout(
-          async () => {
-            await messageModel.deleteMany({ room: newRoom.id });
+          () => {
+            messageModel.deleteMany({ room: newRoom.id });
 
-            await roomModel.findByIdAndDelete(newRoom.id);
+            roomModel.findByIdAndDelete(newRoom.id);
           },
           7,
           200,
