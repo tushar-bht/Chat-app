@@ -30,8 +30,8 @@ try {
   const ws = createServer(app);
   server.installSubscriptionHandlers(ws);
 
-  ws.listen(4000 || process.send.PORT, () => {
-    console.log(` Server ready at http://localhost:4000${server.graphqlPath}`);
+  ws.listen(4000 || process.env.PORT, () => {
+    console.log(` Server ready at ${process.env.PORT}${server.graphqlPath}`);
     // Set up the WebSocket for handling GraphQL subscriptions
   });
 } catch (err) {
