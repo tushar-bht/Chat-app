@@ -14,12 +14,15 @@ const resolvers = require("./resolvers/resolver");
 
 try {
   mongoose.connect(
-    `mongodb+srv://dbUser:${process.env.PASSWORD}@cluster0.g1sxy.mongodb.net/Base?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.DB_USER}:${process.env.PASSWORD}@cluster0.g1sxy.mongodb.net/Base?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }
   );
+
+  console.log(process.send.PASSWORD);
+  console.log(process.env.DB_USER);
   const server = new ApolloServer({
     typeDefs,
     resolvers,
