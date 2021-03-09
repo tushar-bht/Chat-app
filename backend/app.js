@@ -33,7 +33,7 @@ try {
   const ws = createServer(app);
   server.installSubscriptionHandlers(ws);
 
-  ws.listen(4000 || process.env.PORT, () => {
+  ws.listen(process.env.PORT || 4000, () => {
     console.log(` Server ready at ${process.env.PORT}${server.graphqlPath}`);
     // Set up the WebSocket for handling GraphQL subscriptions
   });
