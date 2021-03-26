@@ -81,6 +81,19 @@ const resolver = {
         });
         await newRoom.save();
 
+        setTimeout(() => {
+          const func = async () => {
+            await messageModel.deleteMany({ room: newRoom.id });
+            console.log(newRoom.id);
+            await roomModel.findByIdAndDelete(newRoom.id);
+          };
+          try {
+            func();
+          } catch (err) {
+            console.log(err);
+          }
+        }, 10000);
+
         return newRoom;
       } catch (err) {
         console.log(err);
