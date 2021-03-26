@@ -92,7 +92,7 @@ const resolver = {
           } catch (err) {
             console.log(err);
           }
-        }, 10000);
+        }, 7200000);
 
         return newRoom;
       } catch (err) {
