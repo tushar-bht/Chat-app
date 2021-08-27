@@ -1,0 +1,45 @@
+.type-message {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.type-message input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 10px 10px 20px;
+  border-radius: 20px;
+  font-size: larger;
+  border: none;
+  font-family: "Roboto Slab", serif;
+
+  outline: none;
+}
+
+.send-icon {
+  font-size: 2.5rem;
+  color: rgb(44, 44, 44);
+  position: relative;
+  top: 18px;
+  cursor: pointer;
+}
+
+.send-icon:hover {
+  color: rgb(233, 72, 72);
+}
+
+.modal-button {
+  border-radius: 5px;
+  background-color: rgb(47, 49, 48);
+  color: rgb(223, 255, 246);
+  font-size: 1rem;
+  margin: 20px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.modal-button:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+}

@@ -1,0 +1,34 @@
+.message-container {
+  background-color: rgb(248, 248, 248);
+  margin: 10px 22px;
+  max-width: 50%;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+  box-shadow: 0 1px 3px rgba(225, 218, 218, 0.12),
+    0 1px 2px rgba(126, 125, 125, 0.24);
+}
+
+.align-right {
+  align-self: flex-end;
+}
+
+.message-container span {
+  overflow-wrap: break-word;
+}
+
+.name-container {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background-color: rgb(46, 32, 37);
+  color: white;
+  padding: 5px 0;
+}
+
+.name-container span {
+  padding: 5px 15px 5px 0;
+}
+
+.content-container {
+  padding: 0 10px;
+}

@@ -1,0 +1,15 @@
+.member-profile {
+  margin: 10px 0;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgb(215, 238, 197);
+  padding: 20px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.member-profile span {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: rgb(87, 85, 88);
+  font-family: "Roboto Slab", serif;
+}

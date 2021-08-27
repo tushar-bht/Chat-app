@@ -1,0 +1,40 @@
+.modal {
+  z-index: 90;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 5px 5px;
+  text-align: center;
+  position: fixed;
+  width: 40%;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+
+  top: 15vh;
+  left: 27%;
+  padding: 30px;
+  background-color: rgb(241, 250, 255);
+  transition: cubic-bezier(0.23, 1, 0.32, 1);
+  animation: fadeInDown 500ms ease-in-out;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 430px) {
+  .modal header {
+    font-size: 8px;
+  }
+  .modal {
+    width: 40%;
+    left: 20%;
+  }
+}
+
+.modal__header {
+  display: flex;
+  justify-content: flex-end;
+}
